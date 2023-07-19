@@ -6,13 +6,13 @@ const pessoa = {
     apelidos: ["Lelo", "Studart", "Stu", "Celo"],
 };
 
-let textoCNH = "";
+const textoCNH = pessoa.temCNH ? "possui CNH" : "não possui CNH";
 
-if (pessoa.temCNH) {
-    textoCNH = "possui CNH"
-} else {
-    textoCNH = "não possui CNH"
-};
+//if (pessoa.temCNH) {
+//    textoCNH = "possui CNH"
+//} else {
+//    textoCNH = "não possui CNH"
+//};
 
 console.log(`${pessoa.nome} tem ${pessoa.idade} anos, ${pessoa.altura}m de altura, ${textoCNH} e tem os seguintes apelidos:`)
 for (let apelido of pessoa.apelidos) {
