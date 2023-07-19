@@ -14,8 +14,7 @@ if (pessoa.temCNH) {
     textoCNH = "não possui CNH"
 };
 
-console.log(`${pessoa.nome} tem ${pessoa.idade} anos, ${pessoa.altura}m de altura, ${textoCNH} e tem os seguintes apelidos:
-- ${pessoa.apelidos[0]}
-- ${pessoa.apelidos[1]} 
-- ${pessoa.apelidos[2]} 
-- ${pessoa.apelidos[3]}.`)
+console.log(`${pessoa.nome} tem ${pessoa.idade} anos, ${pessoa.altura}m de altura, ${textoCNH} e tem os seguintes apelidos:`)
+for (let apelido of pessoa.apelidos) {
+    console.log(`- ${apelido}`)
+}
