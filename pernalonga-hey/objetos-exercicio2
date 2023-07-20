@@ -1,0 +1,38 @@
+const produtosConsumidos = [
+    {
+        nome: "Batata frita",
+        precoUnit: 2000,
+        quantidade: 1,
+    },
+    {
+        nome: "Cerveja",
+        precoUnit: 1000,
+        quantidade: 4,
+    },
+    {
+        nome: "Refrigerante",
+        precoUnit: 600,
+        quantidade: 1,
+    }
+]
+const cartaoCliente = {
+    nome: "Marcelo",
+    idade: 34,
+    produtosConsumidos
+};
+console.log(cartaoCliente);
+
+// terceiro desafio da aula
+console.log(cartaoCliente.nome);
+console.log(cartaoCliente.idade);
+cartaoCliente.idade = 33;
+console.log(cartaoCliente.idade);
+console.log(cartaoCliente.produtosConsumidos[0].nome)
+console.log(cartaoCliente.produtosConsumidos[produtosConsumidos.length - 1].precoUnit)
+
+// quarto desafio da aula
+let contaFinal = 0;
+for (let cadaProduto of produtosConsumidos) {
+    contaFinal += cadaProduto.precoUnit * cadaProduto.quantidade;
+}
+console.log(`Boa noite, ${cartaoCliente.nome}! Tudo bem? O valor da sua conta final é de R$ ${(contaFinal / 100).toFixed(2)}. Como gostaria de realizar o pagamento?`)
