@@ -1,0 +1,12 @@
+const nome = "marcelo studart lima";
+const arrayDeNomes = nome.split(" ");
+
+let nomeFormatado = "";
+
+for (let item of arrayDeNomes) {
+    let restanteDoNome = item.slice(1)
+    primeiraletra = item[0].toUpperCase();
+
+    nomeFormatado += primeiraletra + restanteDoNome + " ";
+}
+console.log(nomeFormatado.trim());
