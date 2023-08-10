@@ -1,0 +1,13 @@
+let segundoCronometro = 1;
+let minutoCronometro = 0;
+
+const cronometroContador = setInterval(() => {
+    console.log(`Tempo atual do cronometro: ${minutoCronometro.toFixed().padStart(2, 0)} minutos e ${segundoCronometro.toFixed().padStart(2, 0)} segundos.`)
+    if (segundoCronometro < 59) {
+        segundoCronometro++;
+    }
+    else {
+        minutoCronometro++;
+        segundoCronometro = 0;
+    };
+}, 1000);
