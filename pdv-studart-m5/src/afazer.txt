@@ -1,0 +1,3 @@
+- produtos: upload de arquivos em caso de envio de imagem no cadastro;
+- formatar saída de data;
+- deploy e testes finais;
